@@ -1,0 +1,18 @@
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+        <script src="{% static 'app.js' %}"></script>
+    </head>
+    <body class="root">
+        <h3 class="heading">XML TO JSON CONVERTER</h3>
+        <div class="container">
+            <form class="base-form" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <input class="file-input" type="file" name="document">
+                <button type="submit">convert to json</button>
+            </form>
+        </div>
+    </body>
+</html>

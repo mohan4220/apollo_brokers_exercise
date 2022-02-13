@@ -1,0 +1,48 @@
+.root{
+    margin: 0;
+    padding: 0;
+}
+
+.heading{
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.file-input{
+    height: 5rem;
+    width: 25rem;
+    border: 2px dashed;
+    border-color: #bdbdbd;
+    border-radius: 2rem;
+    padding: 1.7rem
+}
+
+.base-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button{
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5rem ;
+    background: #42a5f5;
+    margin-top: 1rem;
+}
+
+button:active{
+    background: #1976d2;
+    color: beige;
+}
